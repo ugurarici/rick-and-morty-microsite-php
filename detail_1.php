@@ -1,4 +1,5 @@
 <?php
+$title = "Rick Sanchez - Rick and Morty";
 include "header.php";
 ?>
 <h1>Rick Sanchez</h1>

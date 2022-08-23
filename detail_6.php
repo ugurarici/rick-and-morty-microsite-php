@@ -1,4 +1,7 @@
-<?php include "header.php"; ?>
+<?php
+// $title = "Öylesine bi sayfa - Rick and Morty";
+include "header.php";
+?>
 <h2>Artık buraya istediğimi yazarım</h2>
 <p>İstediğim kadar dosya açar hepsinin başının kıçının aynı kalmasını sağlarım.</p>
 <h3>Aha sana görsel</h3>

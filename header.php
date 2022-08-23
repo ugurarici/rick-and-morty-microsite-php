@@ -1,9 +1,14 @@
+<?php
+//  $title isimli bir değişken tanımlanmadıysa
+//      $title isimli bir değişkeni "Rick and Morty" olarak tanımla
+if (!isset($title)) $title = "Rick and Morty";
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
-    <title>Rick and Morty</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -17,6 +22,7 @@
             <a href="detail_3.php">Jerry Smith</a>
             <a href="detail_4.php">Beth Smith</a>
             <a href="detail_5.php">Summer Smith</a>
+            <a href="detail_6.php">Öylesine</a>
         </nav>
     </header>
     <main class="container">
