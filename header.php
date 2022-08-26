@@ -17,12 +17,14 @@ if (!isset($title)) $title = "Rick and Morty";
         <img src="Rick_and_Morty.svg" alt="Rick and Morty logo" width="300" />
         <nav>
             <a href="index.php">Anasayfa</a>
-            <a href="detail_1.php">Rick Sanchez</a>
-            <a href="detail_2.php">Morty Smith</a>
-            <a href="detail_3.php">Jerry Smith</a>
-            <a href="detail_4.php">Beth Smith</a>
-            <a href="detail_5.php">Summer Smith</a>
-            <a href="detail_6.php">Öylesine</a>
+            <!--
+            foreach(... as $character) deseydik detail.php'deki
+            $character değişkeninin değerini bozmuş olacaktık.
+            O yüzden $item kullandık.
+            -->
+            <?php foreach($characters as $index => $item): ?>
+            <a href="detail.php?id=<?=$index?>"><?=$item['name']?></a>
+            <?php endforeach; ?>
         </nav>
     </header>
     <main class="container">
