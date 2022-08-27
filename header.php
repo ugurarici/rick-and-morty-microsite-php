@@ -23,7 +23,9 @@ if (!isset($title)) $title = "Rick and Morty";
             O yüzden $item kullandık.
             -->
             <?php foreach($characters as $index => $item): ?>
-            <a href="detail.php?id=<?=$index?>"><?=$item['name']?></a>
+                <a href="detail.php?id=<?=$index?>">
+                    <?=$item['name']?>
+                </a>
             <?php endforeach; ?>
         </nav>
     </header>
