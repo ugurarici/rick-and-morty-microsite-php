@@ -20,6 +20,10 @@ include "header.php";
     <p>Bu karakteri <?=$character['voice_actor']?> seslendirmektedir.</p>
     <hr />
     <a href="index.php">Geri Dön</a>
+    <br>
+    <a href="edit_page_form.php?id=<?=$_GET['id']?>">Düzenle</a>
+    <br>
+    <a href="delete_page.php?id=<?=$_GET['id']?>">Sil</a>
 <?php
 include "footer.php";
 ?>
