@@ -30,9 +30,21 @@
         "voice_actor": "Spencer Grammer"
     },
     {
-        "name": "WelcomeToTeam",
-        "description": "tttt",
-        "image": "Beth_Smith.webp",
-        "voice_actor": "Eray Aydin"
+        "name": "name ",
+        "description": "desc",
+        "image": "uploads\/630a352749c8a",
+        "voice_actor": "aaa"
+    },
+    {
+        "name": "name dsadsdasd",
+        "description": "desc",
+        "image": "uploads\/630a356c13f9e.png",
+        "voice_actor": "aaa"
+    },
+    {
+        "name": "mahmut",
+        "description": "desc",
+        "image": "uploads\/630a36f6a5ed3.webp",
+        "voice_actor": "aaa"
     }
 ]

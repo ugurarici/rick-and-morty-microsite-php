@@ -17,15 +17,16 @@ if (isset($_FILES['image'])) {
         // Eskisini sil
         unlink($oldImage);
     }
-
+    $extension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    $fileName = uniqid().'.'.$extension;
     // Yenisini yükle
     move_uploaded_file(
         $image['tmp_name'],
-        __DIR__ . "/uploads/" . $image['name']
+        __DIR__ . "/uploads/" . $fileName
     );
 
-    // Yenisinin yolu belirt
-    $image = 'uploads/' . $image['name'];
+    // Yenisinin yolunu belirt
+    $image = 'uploads/' . $fileName;
 } else {
     $image = $characters[$id]['image'];
 }

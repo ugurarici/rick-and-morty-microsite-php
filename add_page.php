@@ -1,8 +1,10 @@
 <?php
+
 $name = $_POST["name"];
 $description = $_POST["description"];
 $voice_actor = $_POST["voice_actor"];
-$fileName = $_FILES['image']['name'];
+$extension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+$fileName = uniqid().'.'.$extension;
 $uploadedFilePath = $_FILES['image']['tmp_name'];
 move_uploaded_file(
     $uploadedFilePath,
