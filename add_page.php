@@ -2,11 +2,11 @@
 $name = $_POST["name"];
 $description = $_POST["description"];
 $voice_actor = $_POST["voice_actor"];
-$dosyaninIsmi = $_FILES['image']['name'];
-$yuklenecekDosya = $_FILES['image']['tmp_name'];
+$fileName = $_FILES['image']['name'];
+$uploadedFilePath = $_FILES['image']['tmp_name'];
 move_uploaded_file(
-    $yuklenecekDosya,
-    __DIR__ . "/uploads/" . $dosyaninIsmi
+    $uploadedFilePath,
+    __DIR__ . "/uploads/" . $fileName
 );
 // $data = file_get_contents('data.json');
 // $characters = json_decode($data, true);
@@ -14,7 +14,7 @@ require_once  'data.php';
 $characters[] = [
     "name" => $name,
     "description" => $description,
-    "image" => "uploads/" . $dosyaninIsmi,
+    "image" => "uploads/" . $fileName,
     "voice_actor" => $voice_actor
 ];
 $json_data = json_encode($characters, JSON_PRETTY_PRINT);
