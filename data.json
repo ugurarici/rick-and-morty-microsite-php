@@ -34,5 +34,11 @@
         "description": "tttt",
         "image": "Beth_Smith.webp",
         "voice_actor": "Eray Aydin"
+    },
+    "8": {
+        "name": "Diane Sanchez",
+        "description": "Diane's death was the defining moment in Rick's life that made him into who he is. The story of Diane has been the overarching mystery of the series from season one up until season five. She was murdered by another Rick via an explosion from a futuristic bomb. The trauma from her murder caused Rick to spiral into a vengeful rampage, sending him on a journey to avenge his dead wife by finding the Rick that killed her.",
+        "image": "uploads\/Diane.webp",
+        "voice_actor": "Kari Wahlgren"
     }
 }

@@ -93,6 +93,9 @@ include "header.php";
     <td>9.4</td>
   </tr>
 </table>
+<p>
+    <a href="add_page_form.php">Yeni Sayfa Ekle</a>
+</p>
 <?php
 include "footer.php";
 ?>

@@ -4,11 +4,12 @@ $description = $_POST["description"];
 $image = $_POST["image"];
 $voice_actor = $_POST["voice_actor"];
 $id = $_POST['id'];
+var_dump($_FILES);
+move_uploaded_file($nereden, $nereye);
+exit;
 // $data = file_get_contents('data.json');
 // $characters = json_decode($data, true);
 require_once  'data.php';
-
-
 
 $characters[$id] = [
     "name" => $name,
