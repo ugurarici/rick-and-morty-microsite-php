@@ -10,8 +10,8 @@ include "header.php";
     <input type="text" name="name" value="<?=$character['name']?>"> <br>
     Desc:
     <textarea name="description"  cols="30" rows="10"><?=$character['description']?></textarea> <br>
+    <img src="<?=$character['image']?>" alt="<?=$character['name']?>" /> <br>
     Image:
-    <input type="text" name="image" value="<?=$character['image']?>"> <br>
     <input type="file" name="image"> <br>
     Voice Aktor:
     <input type="text" name="voice_actor" value="<?=$character['voice_actor']?>">
