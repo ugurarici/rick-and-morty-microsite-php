@@ -2,6 +2,8 @@
 //  $title isimli bir değişken tanımlanmadıysa
 //      $title isimli bir değişkeni "Rick and Morty" olarak tanımla
 if (!isset($title)) $title = "Rick and Morty";
+
+if(!isset($characters)) $characters = [];
 ?>
 <!DOCTYPE html>
 <html>
