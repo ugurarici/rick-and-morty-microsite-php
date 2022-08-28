@@ -3,7 +3,7 @@
 //      $title isimli bir değişkeni "Rick and Morty" olarak tanımla
 if (!isset($title)) $title = "Rick and Morty";
 
-if(!isset($characters)) $characters = [];
+if (!isset($characters)) $characters = [];
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,6 +12,13 @@ if(!isset($characters)) $characters = [];
     <meta charset="utf-8" />
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="style.css" />
+    <?php if (isset($_COOKIE['fontsize'])) : ?>
+        <style>
+            main p {
+                font-size: <?= $_COOKIE['fontsize'] ?>em;
+            }
+        </style>
+    <?php endif; ?>
 </head>
 
 <body>
@@ -24,11 +31,16 @@ if(!isset($characters)) $characters = [];
             $character değişkeninin değerini bozmuş olacaktık.
             O yüzden $item kullandık.
             -->
-            <?php foreach($characters as $index => $item): ?>
-                <a href="detail.php?id=<?=$index?>">
-                    <?=$item['name']?>
+            <?php foreach ($characters as $index => $item) : ?>
+                <a href="detail.php?id=<?= $index ?>">
+                    <?= $item['name'] ?>
                 </a>
             <?php endforeach; ?>
         </nav>
     </header>
     <main class="container">
+        <div style="text-align: right;">
+            <a href="setfontsize.php?size=normal">Normal</a>
+            <a href="setfontsize.php?size=big" style="font-size: 1.5em">Big</a>
+            <a href="setfontsize.php?size=bigger" style="font-size: 2em">Bigger</a>
+        </div>
